@@ -11,7 +11,7 @@
     ],
     "service": [],
 
-    "status": "active",
+    "status": "activ",
     "alsoKnownAs": [
       "did:web:localhost:8080/.well-known/other-did.json"
     ]
