@@ -15,5 +15,11 @@
   ],
   "authentication": [
     "did:web:alompson.github.io:did-web-test#AAAAC3NzaC1lZDI1NTE5AAAAIL65WeTpRCi6wJ7UYnzA2++R4cgBXlmvCiWSi0Hxlqgk"
-  ]
+  ],
+
+  "alsoKnownAs": [
+    "https://alompson.github.io/did-web-test"
+  ],
+
+  "follow-alsoKnownAs":"true"
 }
