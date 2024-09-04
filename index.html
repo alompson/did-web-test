@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <button onclick="window.location.href = '/did.json';">Go to did.json</button>
+    <script type="application/json" id="jsonData">
+    {
+        "@context": "https://www.w3.org/ns/did/v1",
+        "id": "did:web:localhost:8080/.well-known/my-did.json",
+        "authentication": [
+          {
+            "id": "did:web:localhost:8080#key-1",
+            "type": "Ed25519VerificationKey2018",
+            "controller": "did:web:localhost:8080",
+            "publicKeyBase58": "yourPublicKeyHere"
+          }
+        ],
+        "service": [],
+        "status": "activ",
+        "alsoKnownAs": [
+          "did:web:localhost:8080/.well-known/other-did.json"
+        ]
+    }
+    </script>
+    <button onclick="displayJson()">Go to did.json</button>
+    <script>
+        function displayJson() {
+            const jsonData = JSON.parse(document.getElementById('jsonData').textContent);
+            console.log(jsonData);
+            alert(JSON.stringify(jsonData, null, 2));
+        }
+    </script>
 </body>
+
 </html>
