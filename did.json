@@ -1,17 +1,19 @@
 {
   "@context": "https://www.w3.org/ns/did/v1",
-  "id": "did:web:alompson.github.io:did-web-test/.well-known/did.json",
-  "authentication": [
+  "id": "did:web:alompson.github.io:did-web-test",
+  "verificationMethod": [
     {
-      "id": "did:web:alompson.github.io:did-web-test#key-1",
-      "type": "Ed25519VerificationKey2018",
+      "id": "did:web:alompson.github.io:did-web-test#AAAAC3NzaC1lZDI1NTE5AAAAIL65WeTpRCi6wJ7UYnzA2++R4cgBXlmvCiWSi0Hxlqgk",
+      "type": "JsonWebKey2020",
       "controller": "did:web:alompson.github.io:did-web-test",
-      "publicKeyBase58": "yourPublicKeyHere"
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "x": "ckuTRlq-7fSzfhGtD7EiSp3U567FnkAqOFLcmae7p60"
+      }
     }
   ],
-  "service": [],
-  "status": "activ",
-  "alsoKnownAs": [
-    "did:web:alompson.github.io:did-web-test/.well-known/other-did.json"
+  "authentication": [
+    "did:web:alompson.github.io:did-web-test#AAAAC3NzaC1lZDI1NTE5AAAAIL65WeTpRCi6wJ7UYnzA2++R4cgBXlmvCiWSi0Hxlqgk"
   ]
 }
