@@ -9,23 +9,23 @@
 
 <body>
     <script type="application/json" id="jsonData">
-    {
-        "@context": "https://www.w3.org/ns/did/v1",
-        "id": "did:web:localhost:8080/.well-known/my-did.json",
-        "authentication": [
-          {
-            "id": "did:web:localhost:8080#key-1",
-            "type": "Ed25519VerificationKey2018",
-            "controller": "did:web:localhost:8080",
-            "publicKeyBase58": "yourPublicKeyHere"
-          }
-        ],
-        "service": [],
-        "status": "activ",
-        "alsoKnownAs": [
-          "did:web:localhost:8080/.well-known/other-did.json"
-        ]
-    }
+        {
+            "@context": "https://www.w3.org/ns/did/v1",
+            "id": "did:web:alompson.github.io:did-web-test/.well-known/did.json",
+            "authentication": [
+              {
+                "id": "did:web:alompson.github.io:did-web-test#key-1",
+                "type": "Ed25519VerificationKey2018",
+                "controller": "did:web:alompson.github.io:did-web-test",
+                "publicKeyBase58": "yourPublicKeyHere"
+              }
+            ],
+            "service": [],
+            "status": "activ",
+            "alsoKnownAs": [
+              "did:web:alompson.github.io:did-web-test/.well-known/other-did.json"
+            ]
+        }        
     </script>
     <button onclick="displayJson()">Go to did.json</button>
     <script>
