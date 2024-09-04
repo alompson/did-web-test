@@ -18,8 +18,8 @@
   ],
 
   "alsoKnownAs": [
-    "https://alompson.github.io/did-web-test"
-  ],
+    "did:web:alompson.github.io:another-did-web"
+    ],
 
   "follow-alsoKnownAs":"true"
 }
